@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           fontFamily: "Comfortaa",
           visualDensity: VisualDensity.adaptivePlatformDensity,
+          primarySwatch: Colors.blueGrey,
           primaryColor: mainColor),
       home: MyRouter(),
     );

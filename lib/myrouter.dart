@@ -11,7 +11,7 @@ class MyRouter extends StatefulWidget {
 }
 
 class _MyRouterState extends State<MyRouter> {
-  final screens = [HomePage(), TransactionPage()];
+  final screens = [HomePage(), TransactionsPage()];
   int _currentIndex = 0;
   @override
   Widget build(BuildContext context) {
