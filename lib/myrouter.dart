@@ -11,12 +11,12 @@ class MyRouter extends StatefulWidget {
 }
 
 class _MyRouterState extends State<MyRouter> {
-  final screens = [HomePage(), TransactionsPage()];
+  //final screens = [HomePage(), TransactionsPage()];
   int _currentIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: screens[_currentIndex],
+      //body: screens[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: mainColor,
         selectedFontSize: 17,
