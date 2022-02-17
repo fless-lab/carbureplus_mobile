@@ -11,9 +11,22 @@ class AboutPage extends StatelessWidget {
         leading: OpenDrawer(),
         title: Text(
           "À Propos de nous !",
-          style: TextStyle(fontWeight: FontWeight.w900),
+          style: TextStyle(fontSize: 18),
         ),
         centerTitle: true,
+      ),
+      body: Center(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text("Dévéllopé par "),
+            Text(
+              "Abdou-Raouf ATARMLA",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+          ],
+        ),
       ),
     );
   }

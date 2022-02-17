@@ -11,7 +11,7 @@ class AssistantPage extends StatelessWidget {
         leading: OpenDrawer(),
         title: Text(
           "Besoin d'aide ?",
-          style: TextStyle(fontWeight: FontWeight.w900),
+          style: TextStyle(fontSize: 18),
         ),
         centerTitle: true,
       ),

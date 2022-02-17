@@ -11,7 +11,7 @@ class AccountPage extends StatelessWidget {
         leading: OpenDrawer(),
         title: Text(
           "Mon Compte",
-          style: TextStyle(fontWeight: FontWeight.w900),
+          style: TextStyle(fontSize: 18),
         ),
         centerTitle: true,
       ),
