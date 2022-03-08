@@ -356,7 +356,7 @@ class _HomePageState extends State<HomePage> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "Transaction récentes",
+                            "Dernières transactions",
                             style: TextStyle(
                                 fontSize: 17,
                                 fontWeight: FontWeight.w900,
@@ -496,12 +496,14 @@ class _HomePageState extends State<HomePage> {
             int.parse(amountController.text);
         if (monnaie < 0) {
           setState(() {
+            saleLoading = false;
             errorMessage =
                 "Erreur !!! Le montant est supérieur à la valeur du bon.";
           });
         } else {
           if (monnaie > 0 && phoneController.text == "") {
             setState(() {
+              saleLoading = false;
               errorMessage =
                   "Vous devriez renseigner un numéro pour l'envoie de la monnaie.";
             });
@@ -518,6 +520,7 @@ class _HomePageState extends State<HomePage> {
             if (body["success"] != null && body["success"]) {
               setState(() {
                 saleLoading = false;
+                errorMessage = "";
               });
               _getTransactions();
               _getTodaySale();
@@ -528,7 +531,7 @@ class _HomePageState extends State<HomePage> {
             } else {
               setState(() {
                 saleLoading = false;
-                //errorMessage = body["message"];
+                errorMessage = body["message"];
               });
             }
           }

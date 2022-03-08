@@ -1,11 +1,14 @@
 import 'package:flutter/cupertino.dart';
 
 const mainColor = Color.fromARGB(255, 55, 49, 88);
+//#373158
 const secondColor = Color.fromARGB(255, 129, 0, 225);
 const txtColor = Color.fromARGB(255, 238, 238, 239);
-const String source_ip = "10.0.2.2";
-const String baseUrl = "http://$source_ip:8000/api/auth/";
-const String imgUrl = "http://$source_ip:8000/images/logos/";
+//const String source_ip = "10.0.2.2";
+//const String baseUrl = "http://$source_ip:8000/api/auth/";
+//const String imgUrl = "http://$source_ip:8000/images/logos/";
+const String baseUrl = "https://carbureplus.herokuapp.com/api/auth/";
+const String imgUrl = "https://carbureplus.herokuapp.com/images/logos/";
 const Map<String, String> headers = {"Content-Type": "application/json"};
 
 const darkBG = Color.fromARGB(255, 31, 36, 40);

@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ApiCall {
-  final String _url = "http://$source_ip:8000/api/auth/";
+  final String _url = "https://carbureplus.herokuapp.com/api/auth/";
 
   postData(data, apiUrl) async {
     var fullUrl = _url + apiUrl + await getToken();
